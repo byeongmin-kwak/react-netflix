@@ -32,7 +32,7 @@ export default function Nav() {
         alt="Netflix logo"
         src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
         className="nav__logo"
-        onClick={() => window.location.href = "https://byeongmin-kwak.github.io/react-netflix/"} // 홈페이지로 이동
+        onClick={() => (window.location.href = "/react-netflix/")} // 홈페이지로 이동
         />
 
       <input
