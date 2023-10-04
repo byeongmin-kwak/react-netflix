@@ -27,7 +27,8 @@ export default function Nav() {
   };
 
   const goToHomePage = () => {
-    navigate("/"); // 홈페이지로 이동
+    //navigate("/"); // React Router를 사용하여 페이지로 이동
+    window.location.href = "/react-netflix"
   };
 
   return (
