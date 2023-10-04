@@ -23,17 +23,21 @@ export default function Nav() {
 
   const handleChange = (e) => {
     setSearchValue(e.target.value);
-    navigate(`/search?q=${e.target.value}`)
+    navigate(`/search?q=${e.target.value}`);
+  };
+
+  const goToHomePage = () => {
+    navigate("/"); // 홈페이지로 이동
   };
 
   return (
-    <nav className={`nav ${show && "nav__black"}`}>
+    <nav className={`nav ${show ? "nav__black" : ""}`}>
       <img
         alt="Netflix logo"
         src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
         className="nav__logo"
-        onClick={() => (window.location.href = "/react-netflix/")} // 홈페이지로 이동
-        />
+        onClick={goToHomePage} // 홈페이지로 이동
+      />
 
       <input
         value={searchValue}
