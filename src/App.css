@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+}
+.app {
+  background: #111;
+}
+
+iframe#webpack-dev-server-client-overlay{display:none!important}
